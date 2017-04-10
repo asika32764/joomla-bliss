@@ -60,10 +60,11 @@ table:
     '#__update_sites_extensions': all
     '#__updates': cols
     '#__user_keys': all
-    '#__user_notes': cols
-    '#__user_profiles': cols
-    '#__user_usergroup_map': cols
+    '#__user_notes': all
+    '#__user_profiles': all
+    '#__user_usergroup_map': all
     '#__usergroups': all
-    '#__users': cols
+    '#__users': all
     '#__utf8_conversion': all
     '#__viewlevels': all
+    '#__test': all

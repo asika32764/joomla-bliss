@@ -1564,6 +1564,15 @@
         - ['5', hathor, '1', '0', 'Hathor - Default', '{"showSiteName":"0","colourChoice":"","boldText":"0"}']
         - ['7', protostar, '0', '1', 'protostar - Default', '{"templateColor":"","logoFile":"","googleFont":"1","googleFontName":"Open+Sans","fluidContainer":"0"}']
         - ['8', isis, '1', '1', 'isis - Default', '{"templateColor":"","logoFile":""}']
+'#__test':
+    name: '#__test'
+    from:
+        - '#__test'
+    columns:
+        id: { Field: id, Type: int(11), 'Null': 'NO', Default: null, Extra: auto_increment, Comment: '', From: [id] }
+        title: { Field: title, Type: varchar(255), 'Null': 'NO', Default: null, Extra: '', Comment: '', From: [title] }
+    index:
+        - { Table: '#__test', Non_unique: '0', Key_name: PRIMARY, Seq_in_index: '1', Column_name: id, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
 '#__ucm_base':
     name: '#__ucm_base'
     from:
@@ -1775,6 +1784,8 @@
     index:
         - { Table: '#__user_usergroup_map', Non_unique: '0', Key_name: PRIMARY, Seq_in_index: '1', Column_name: user_id, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
         - { Table: '#__user_usergroup_map', Non_unique: '0', Key_name: PRIMARY, Seq_in_index: '2', Column_name: group_id, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
+    data:
+        - ['496', '8']
 '#__usergroups':
     name: '#__usergroups'
     from:
@@ -1830,6 +1841,8 @@
         - { Table: '#__users', Non_unique: '1', Key_name: idx_block, Seq_in_index: '1', Column_name: block, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
         - { Table: '#__users', Non_unique: '1', Key_name: username, Seq_in_index: '1', Column_name: username, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
         - { Table: '#__users', Non_unique: '1', Key_name: email, Seq_in_index: '1', Column_name: email, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
+    data:
+        - ['496', 'Super User', admin, asika32764@gmail.com, $2y$10$LQL/qhRj6JmaR4KQslpvC.bjk0yOE/BPKDmeemFfcBn8YVyii4raq, '0', '1', '2017-04-05 05:07:41', '2017-04-05 05:08:05', '0', '', '0000-00-00 00:00:00', '0', '', '', '0']
 '#__utf8_conversion':
     name: '#__utf8_conversion'
     from:
