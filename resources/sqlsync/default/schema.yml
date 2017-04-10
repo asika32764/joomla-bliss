@@ -1571,6 +1571,7 @@
     columns:
         id: { Field: id, Type: int(11), 'Null': 'NO', Default: null, Extra: auto_increment, Comment: '', From: [id] }
         title: { Field: title, Type: varchar(255), 'Null': 'NO', Default: null, Extra: '', Comment: '', From: [title] }
+        state: { Field: state, Type: tinyint(1), 'Null': 'NO', Default: null, Extra: '', Comment: '', From: [state] }
     index:
         - { Table: '#__test', Non_unique: '0', Key_name: PRIMARY, Seq_in_index: '1', Column_name: id, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
 '#__ucm_base':
