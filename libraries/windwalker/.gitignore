@@ -1,0 +1,14 @@
+# Development system files #
+.*
+!/.gitignore
+!.travis.yml
+
+# Composer #
+/vendor
+!vendor/index.html
+
+# Windwalker #
+/config.json
+
+# TEST #
+/phpunit.xml

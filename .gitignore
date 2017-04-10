@@ -1,0 +1,26 @@
+# System #
+.*
+!/.gitignore
+Thumbs.db
+
+# Composer #
+composer.lock
+/vendor/*
+
+# Apache #
+# .htaccess
+
+# For whole Joomla! site #
+/logs/*
+!/logs/index.html
+/log/*
+!/log/index.html
+/cache/*
+!/cache/index.html
+/tmp/*
+!/tmp/index.html
+/configuration.php
+
+# Akeeba #
+/administrator/components/com_akeeba/backup/*.zip
+/administrator/components/com_akeeba/backup/*.jpa
