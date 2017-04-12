@@ -1,0 +1,14 @@
+<form>
+    <fields name="extra">
+        <fieldset name="extra" label="Extra">
+            <field
+                name="address"
+                type="text"
+                label="Address"
+                description="Address"
+                class="input-xlarge"
+                default=""
+            />
+        </fieldset>
+    </fields>
+</form>
