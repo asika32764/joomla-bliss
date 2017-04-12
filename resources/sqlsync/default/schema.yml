@@ -196,6 +196,18 @@
     data:
         - ['index.php?option=com_content&view=article&id=1&catid=2&Itemid=101', '', '0000-00-00 00:00:00']
         - ['index.php?option=com_content&view=category&id=2&Itemid=101', '', '0000-00-00 00:00:00']
+'#__bliss_user_profiles':
+    name: '#__bliss_user_profiles'
+    from:
+        - '#__bliss_user_profiles'
+    columns:
+        id: { Field: id, Type: int(11), 'Null': 'NO', Default: null, Extra: auto_increment, Comment: '', From: [id] }
+        user_id: { Field: user_id, Type: int(11), 'Null': 'NO', Default: null, Extra: '', Comment: '', From: [user_id] }
+        birthday: { Field: birthday, Type: datetime, 'Null': 'NO', Default: null, Extra: '', Comment: '', From: [birthday] }
+        phone: { Field: phone, Type: varchar(255), 'Null': 'NO', Default: null, Extra: '', Comment: '', From: [phone] }
+        address: { Field: address, Type: varchar(255), 'Null': 'NO', Default: null, Extra: '', Comment: '', From: [address] }
+    index:
+        - { Table: '#__bliss_user_profiles', Non_unique: '0', Key_name: PRIMARY, Seq_in_index: '1', Column_name: id, Sub_part: null, 'Null': '', Comment: '', Index_comment: '' }
 '#__categories':
     name: '#__categories'
     from:
