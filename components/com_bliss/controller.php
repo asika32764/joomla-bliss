@@ -84,9 +84,11 @@ class BlissController extends JControllerLegacy{
 
 	protected function validateCheckCode()
 	{
-		$merchantID = 'MS31005804';
-		$hashKey    = 'daMrxeY4Dxgvn5AAg6BivBuWPvMbhI1u';
-		$hashIV     = 'SOWp2VuGtKbQQMr7';
+		$params = JComponentHelper::getParams('com_bliss');
+
+		$merchantID = $params->get('Spgateway.MerchantID');
+		$hashKey    = $params->get('Spgateway.HashKey');
+		$hashIV     = $params->get('Spgateway.HashIV');
 
 		$orderId = $this->input->post->get('MerchantOrderNo');
 		$tradeNo = $this->input->post->get('TradeNo');

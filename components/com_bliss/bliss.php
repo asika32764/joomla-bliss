@@ -1,5 +1,9 @@
 <?php
 
+// store env config to component params
+$params = JComponentHelper::getParams('com_bliss');
+$params->loadArray(include JPATH_ROOT . '/env.php');
+
 $input=JFactory::getApplication()->input;
 
 $controller = JControllerLegacy::getInstance('bliss');

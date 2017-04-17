@@ -3,9 +3,11 @@ class BlissViewPayment extends JViewLegacy{
 
 	public function display($tpl = NULL)
 	{
-		$merchantID = 'MS31005804';
-		$hashKey    = 'daMrxeY4Dxgvn5AAg6BivBuWPvMbhI1u';
-		$hashIV     = 'SOWp2VuGtKbQQMr7';
+		$params = JComponentHelper::getParams('com_bliss');
+
+		$merchantID = $params->get('Spgateway.MerchantID');
+		$hashKey    = $params->get('Spgateway.HashKey');
+		$hashIV     = $params->get('Spgateway.HashIV');
 		$version    = '1.2';
 		$amount     = '2500';
 		$orderId    = '0001_' . uniqid();
