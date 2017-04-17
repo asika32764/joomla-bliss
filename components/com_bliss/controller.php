@@ -106,6 +106,14 @@ class BlissController extends JControllerLegacy{
 
 		return $CheckCode === $this->input->post->get('CheckCode');
 	}
+
+	public function getCities()
+	{
+		$cities = $db->loadObjectList();
+		echo json_decode($cities);
+
+		die;
+	}
 }
 
 ?>
