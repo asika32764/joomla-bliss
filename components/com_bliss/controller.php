@@ -119,6 +119,36 @@ class BlissController extends JControllerLegacy{
 
 		die;
 	}
+
+	public function loginAjax()
+	{
+
+	}
+
+	public function registerAjax()
+	{
+		$data = [
+			'username' => 'hello3',
+			'name' => 'Hello',
+			'password1' => '1234',
+			'email' => 'qwe3@test.com',
+			'profile' => [
+				'birthday' => '2011-02-02'
+			]
+		];
+
+		// Validate data
+
+		$user = JUser::getInstance();
+		$user->bind($data);
+		JPluginHelper::importPlugin('user');
+		$user->save();
+
+		header('Content-type: text/json');
+		echo new JResponseJson($user->getProperties());
+
+		die;
+	}
 }
 
 ?>
